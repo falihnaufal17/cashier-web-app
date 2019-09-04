@@ -23,14 +23,14 @@ export class Navbars extends Component {
             <Container fluid>
                 <Row>
                     <Col md="9">
-                        <Navbar color="faded" light className="shadow-sm" >
+                        <Navbar color="faded" light className="shadow-sm" style={{ backgroundColor: 'white' }} >
                             <NavbarToggler onClick={this.toggleNavbar} className="mr-auto" />
                             <NavbarBrand href="/" className="m-auto">Food Items</NavbarBrand>
                             <FontAwesomeIcon icon={faSearch} size="1x" className="ml-auto" />
                         </Navbar>
                     </Col>
                     <Col md="3">
-                        <Navbar color="faded" light className="shadow-sm">
+                        <Navbar color="faded" light className="shadow-sm" style={{ backgroundColor: 'white' }}>
                             <NavbarBrand className="m-auto">Cart <Badge style={{ backgroundColor: '#56cad5' }}>0</Badge></NavbarBrand>
                         </Navbar>
                     </Col>

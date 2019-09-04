@@ -5,7 +5,7 @@ import Content from '../components/content';
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div style={{ backgroundColor: 'rgba(190, 195, 202, 0.3)' }}>
                 <Navbars />
                 <Content />
             </div>

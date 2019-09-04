@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Nav, NavItem, NavLink } from 'reactstrap'
+import Menulist from './menulist';
 
 export class Content extends Component {
     render() {
@@ -15,7 +16,7 @@ export class Content extends Component {
                     </Col>
                     <Col md="8">
                         <Container style={{ marginTop: "5%" }}>
-                            <h6>content</h6>
+                            <Menulist />
                         </Container>
                     </Col>
                     <Col md="3">
