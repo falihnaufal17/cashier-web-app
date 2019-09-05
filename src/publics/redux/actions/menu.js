@@ -7,3 +7,10 @@ export const getAllMenu = () => {
         payload: Axios.get(`${api}/menus/`)
     }
 }
+
+export const addMenu = (data) => {
+    return {
+        type: 'ADD_MENU',
+        payload: Axios.post(`${api}/menus/`, data)
+    }
+}

@@ -57,11 +57,11 @@ export class Menulist extends Component {
                             :
                             menus &&
                                 menus.length > 0 ?
-                                menus.map((item) => {
+                                menus.map((item, key) => {
 
                                     return (
-                                        <Col md="4">
-                                            <Card className="mt-1 mb-5" style={{ backgroundColor: 'transparent', borderColor: 'transparent', cursor: 'pointer' }}>
+                                        <Col md="4" key={key}>
+                                            <Card className="mt-1 mb-auto" style={{ backgroundColor: 'transparent', borderColor: 'transparent', cursor: 'pointer' }}>
                                                 <CardImg top width="100%" height="170" src={item.image} alt="Card image cap" />
                                                 <CardBody>
                                                     <CardTitle>{item.name}</CardTitle>

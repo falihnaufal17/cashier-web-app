@@ -27,6 +27,26 @@ const menu = (state = initialState, action) => {
                 isFulFilled: true,
                 menuList: action.payload.data.result
             }
+        case 'ADD_MENU_PENDING':
+            return {
+                ...state,
+                isLoading: true,
+                isFulFilled: false,
+                isRejected: false
+            }
+        case 'ADD_MENU_REJECTED':
+            return {
+                ...state,
+                isLoading: false,
+                isRejected: true
+            }
+        case 'ADD_MENU_FULFILLED':
+            return {
+                ...state,
+                isLoading: false,
+                isFulFilled: true,
+                menuList: action.payload.data.result
+            }
         default:
             return state
     }
