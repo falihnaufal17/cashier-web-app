@@ -1,3 +1,3 @@
-const api = 'http://localhost:1700'
+const api = 'https://cashierku.herokuapp.com'
 
 export default api
