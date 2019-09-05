@@ -47,6 +47,8 @@ export class Content extends Component {
     render() {
         const { cart } = this.state
         console.log("length cart: ", datacart.length)
+        let receiptNo = Math.floor((Math.random() * 1000000000) + 1)
+        console.log("receipt no: ", receiptNo)
         return (
             <Container fluid>
                 <Row>
