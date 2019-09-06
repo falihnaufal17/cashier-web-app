@@ -61,7 +61,7 @@ class Modaltransaction extends React.Component {
                         </Row>
                         <Row className="mt-5">
                             <Col md="6" className="ml-auto">
-                                <h6 style={{ textAlign: 'right' }}>Total: {this.props.totalHargal}</h6>
+                                <h6 style={{ textAlign: 'right' }}>Total: {this.props.totalHarga}</h6>
                             </Col>
                         </Row>
                         <Row>
